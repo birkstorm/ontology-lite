@@ -1,0 +1,15 @@
+[project]
+name = "ontology-lite"
+version = "0.1.0"
+description = "Explainable entity resolution and link analysis over a typed object graph"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+ontology-lite = "ontology_lite.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

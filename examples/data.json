@@ -1,0 +1,24 @@
+{
+  "records": [
+    {"source": "crm",   "id": "1", "fields": {"name": "John Smith",       "email": "jsmith@acme.com",   "phone": "+1 (555) 010-2200"}},
+    {"source": "mail",  "id": "a", "fields": {"name": "Smith, John",      "email": "jsmith@acme.com"}},
+    {"source": "bank",  "id": "77","fields": {"name": "J. Smith",         "phone": "555-010-2200"}},
+    {"source": "crm",   "id": "2", "fields": {"name": "Maria Garcia",     "email": "maria.g@globex.io", "phone": "555 010 3300"}},
+    {"source": "mail",  "id": "b", "fields": {"name": "María García",     "email": "maria.g@globex.io"}},
+    {"source": "crm",   "id": "3", "fields": {"name": "John Smith",       "email": "john.smith@other.org", "phone": "555-999-1234"}},
+    {"source": "crm",   "id": "4", "fields": {"name": "Wei Chen",         "email": "wchen@initech.com"}},
+    {"source": "bank",  "id": "90","fields": {"name": "Wei  Chen",        "email": "wchen@initech.com"}},
+    {"source": "crm",   "id": "5", "fields": {"name": "Priya Nair",       "email": "priya@umbrella.co"}},
+    {"source": "crm",   "id": "6", "fields": {"name": "Tomas Novak",      "email": "tnovak@hooli.com"}},
+    {"source": "crm",   "id": "7", "fields": {"name": "Aisha Bello",      "email": "aisha@stark.dev"}}
+  ],
+  "links": [
+    {"from": "crm:1",  "to": "crm:2",  "type": "emailed"},
+    {"from": "mail:a", "to": "crm:4",  "type": "emailed"},
+    {"from": "bank:77","to": "crm:5",  "type": "paid"},
+    {"from": "crm:2",  "to": "crm:6",  "type": "emailed"},
+    {"from": "crm:4",  "to": "crm:6",  "type": "paid"},
+    {"from": "crm:6",  "to": "crm:7",  "type": "emailed"},
+    {"from": "crm:3",  "to": "crm:7",  "type": "paid"}
+  ]
+}
