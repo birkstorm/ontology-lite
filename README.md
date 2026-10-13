@@ -45,3 +45,4 @@ python -m ontology_lite examples/data.json
 ## Possible extensions
 
 Pluggable per-field comparators, learned weights (Fellegi-Sunter / EM), incremental resolution as new records stream in, and property-level provenance on each canonical entity.
+# ontology-lite
