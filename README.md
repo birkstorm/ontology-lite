@@ -1,4 +1,4 @@
-# ontology-lite
+# ONTOLOGY-LITE
 
 Explainable **entity resolution** and **link analysis** over a typed object graph. Zero dependencies, pure Python 3.10+.
 
